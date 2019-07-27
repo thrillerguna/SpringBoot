@@ -34,6 +34,7 @@ public class DepartmentController {
 	@RequestMapping(value="/depts", method=RequestMethod.POST)
 	public String addDepartment(@RequestBody Department dept)
 	{
+		//Hi
 		departmentService.addDept(dept);
 		return "Success";
 	}
@@ -48,6 +49,7 @@ public class DepartmentController {
 	@RequestMapping(value="/depts/{id}", method=RequestMethod.DELETE)
 	public String deleteDepartment(@PathVariable String id)
 	{
+		//hi
 		departmentService.deleteDept(id);
 		return "Success";
 	}
